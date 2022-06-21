@@ -1,9 +1,9 @@
-import Counter from './features/counter/Counter';
+import PostsList from './features/posts/PostsList';
 
 const App = () => {
   return (
     <main className="App">
-      <Counter />
+      <PostsList />
     </main>
   );
 };
