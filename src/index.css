@@ -28,7 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: purple;
+  background-color: rgb(22, 18, 66);
   color: whitesmoke;
   position: sticky;
   top: 0;
@@ -127,6 +127,6 @@ textarea {
 }
 
 .deleteButton {
-  background-color: palevioletred;
+  background-color: rgb(150, 47, 47);
   color: white;
 }
