@@ -3,8 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { addNewPost } from './postsSlice';
 import { selectAllUsers } from '../users/usersSlice';
+import { useNavigate } from 'react-router-dom';
 
 const AddPostForm = () => {
+  const navigate = useNavigate();
+
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [userId, setUserId] = useState('');
@@ -36,6 +39,7 @@ const AddPostForm = () => {
     setTitle('');
     setContent('');
     setUserId('');
+    navigate('/');
   };
 
   const usersOptions = users.map((user) => (
